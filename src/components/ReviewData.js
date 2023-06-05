@@ -5,7 +5,7 @@ const reviews = [
     job: "web developer",
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-    text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+    text: "I had an incredible experience with this travel agency! They planned my dream vacation flawlessly. From the moment I contacted them to the end of my trip, their team was professional, attentive, and knowledgeable. I highly recommend their services!",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const reviews = [
     job: "web designer",
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
-    text: "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
+    text: "I can't thank this travel agency enough for the amazing adventure they organized for me. The itinerary was well-designed, and they included all the must-visit attractions and hidden gems. The accommodations and transportation were top-notch. I had an unforgettable journey!",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const reviews = [
     job: "intern",
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
-    text: "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+    text: "I was impressed by the excellent service provided by this travel agency. Their attention to detail, prompt responses, and friendly staff made my vacation stress-free. They truly went above and beyond to ensure that every aspect of my trip was taken care of.",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const reviews = [
     job: "the boss",
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
-    text: "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+    text: "Choosing this travel agency was the best decision I made for my family vacation.To the interests of each family member. The tour guides were knowledgeable, and the activities were engaging. Our trip was filled with incredible memories. Thank you! ",
   },
 ];
 

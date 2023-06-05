@@ -14,15 +14,18 @@ const Questions = () => {
       <div key={question.id}>
         <div className="question-icon">
           <h5>{question.title}</h5>
-          <FaPlus onClick={() => handleClick(question.id)} />
+          <span className="plus-minus-icon" onClick={() => handleClick(question.id)}> 
+            {shownInfoId === question.id ? "-" : "+"}
+          </span>
         </div>
-        <p className="question-info">{shownInfoId === question.id && question.info}</p>
+        <p className="question-info">
+          {shownInfoId === question.id && question.info}
+        </p>
       </div>
     );
   });
   return (
     <div className="question-div">
-      
       {dispalyQuestions}
     </div>
   );

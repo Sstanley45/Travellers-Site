@@ -13,7 +13,9 @@ const Services = () => {
             />
             <h2 style={{ textAlign: "center" }}>Flight Booking</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi id alias veritatis suscipit esse, aut deleniti ad eligendi ipsa eaque veniam saepe praesentium dolore. Tempore.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi id
+              alias veritatis suscipit esse, aut deleniti ad eligendi ipsa eaque
+              veniam saepe praesentium dolore. Tempore.
             </p>
           </div>
           <div>
@@ -22,9 +24,13 @@ const Services = () => {
               src="https://images.unsplash.com/photo-1594741158704-5a784b8e59fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEhvdGVsJTIwYm9va2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt=""
             />
-            <h2 style={{ textAlign: "center" }}>Hotel Booking</h2>
+            <h2 className="style-text" style={{ textAlign: "center" }}>
+              Hotel Booking
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam voluptatibus recusandae repellendus, nemo quod rem iste nulla quasi eius odio?
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
+              voluptatibus recusandae repellendus, nemo quod rem iste nulla
+              quasi eius odio?
             </p>
           </div>
           <div>
@@ -35,7 +41,9 @@ const Services = () => {
             />
             <h2 style={{ textAlign: "center" }}>Tour Packages</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minus soluta voluptatem omnis fuga odio reiciendis, exercitationem totam qui.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              minus soluta voluptatem omnis fuga odio reiciendis, exercitationem
+              totam qui.
             </p>
           </div>
         </div>

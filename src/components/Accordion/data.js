@@ -1,33 +1,23 @@
 const questions = [
   {
     id: 1,
-    title: 'Do I have to allow the use of cookies?',
-    info:
-      'Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.',
+    title: "How can I book a trip with your agency?",
+    info: "Booking a trip with our agency is easy. Simply visit our website, choose your destination, select your preferred dates, and follow the booking instructions. You can also reach out to our customer support team for assistance..",
   },
   {
     id: 2,
-    title: 'How do I change my My Page password?',
-    info:
-      'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
+    title: "What payment methods do you accept?",
+    info: "We accept various payment methods, including credit cards (Visa, Mastercard, American Express), debit cards, and online payment platforms such as PayPal. You can select your preferred payment option during the booking process.",
   },
   {
     id: 3,
-    title: 'What is BankID?',
-    info:
-      'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
+    title: " Can I customize my travel itinerary?",
+    info: " Absolutely! We understand that every traveler has unique preferences. We offer customizable travel itineraries to cater to your specific needs. You can work with our experienced travel consultants to create a personalized itinerary that suits your interests, budget, and timeline.",
   },
   {
     id: 4,
-    title: 'Whose birth number can I use?',
-    info:
-      'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
-  },
-  {
-    id: 5,
-    title: 'When do I recieve a password ordered by letter?',
-    info:
-      'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
-  },
-]
+    title: "What if I need to cancel or modify my booking?",
+    info: "We understand that plans can change. If you need to cancel or modify your booking, please contact our customer support team as soon as possible. Our cancellation and modification policies vary depending on the type of booking and the supplier's terms and conditions. We will assist you in the process and provide you with the necessary information..",
+  }
+];
 export default questions

@@ -62,13 +62,23 @@ export default function App() {
         )}
         <h2 style={{ textAlign: "center" }}>Reviews</h2>
         <div className="reviews-illustration-div">
-          <Reviews />
-          <img className="illustration-travell" src={travel} alt="" />
+          <div>
+            <Reviews />
+          </div>
+          <div className="flex-item-1">
+            <img className="illustration-travell" src={travel} alt="" />
+          </div>
         </div>
-        <h3 style={{ textAlign: "center" }}>Frequently asked question</h3>
-        <div className='question-illustration-div'>
-          <img className="illustration-travell" src={faq} alt="" /> 
-          <Questions />
+        <h3 style={{ textAlign: "center" }}>
+          Frequently asked question - <span className='style-text'>FAQs</span>
+        </h3>
+        <div className="question-illustration-div">
+          <div className="flex-item-1">
+            <img className="illustration-travell" src={faq} alt="" />
+          </div>
+          <div>
+            <Questions />
+          </div>
         </div>
 
         <Footer />

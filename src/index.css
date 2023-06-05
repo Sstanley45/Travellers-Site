@@ -104,7 +104,7 @@ text-align: center;
   background-color: rgb(235, 195, 195);
 }
 .style-text{
-  color: rgb(247, 166, 179);
+  color: rgb(221, 57, 85);
   font-family:'Courier New', Courier, monospace ;
   font-variant: initial;
 }
@@ -137,7 +137,7 @@ text-align: center;
 }
 .review-div{
   width: 600px;
-  height: 500px;
+  height: auto;
   margin: 20px;
   padding: 70px 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -176,14 +176,17 @@ text-align: center;
   display: flex;
   justify-content: space-between;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 15px;
 }
 .question-info{
   font-family:'Courier New', Courier, monospace ;
   font-size: large;
+  color: rgb(221, 57, 85);
 }
 .illustration-travell{
-  width: 400px;
-  height: auto;
+  width: 500px;
+  height: 500px;
 }
 .reviews-illustration-div{
   display: flex;
@@ -192,4 +195,13 @@ text-align: center;
 .question-illustration-div{
   display: flex;
    justify-content: space-around;
+}
+.flex-item-1 {
+  flex-shrink: 0;
+}
+.plus-minus-icon{
+  font-size:larger ;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(238, 82, 108);
 }

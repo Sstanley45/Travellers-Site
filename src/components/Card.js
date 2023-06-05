@@ -33,7 +33,7 @@ export default function Card(props){
               </p>
               <h5 className="card-title">{props.item.title}</h5>
               <p className="card-text">
-                {readMore ? props.item.description :  `${props.item.description.substring(0, 180)}...`} <button onClick={handleReadMore} id="readM-btn">{ readMore ? "readLess" : "readMore" }</button>
+                {readMore ? props.item.description :  `${props.item.description.substring(0, 180)}...`} <button onClick={handleReadMore} id="readM-btn">{ readMore ? "ReadLess" : "ReadMore" }</button>
               </p>
               <p className="card-text">
                 <small className="text-muted">{props.item.startDate}</small>
