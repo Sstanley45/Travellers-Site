@@ -1,3 +1,5 @@
+import travel from '../src/images/travell.svg'
+import faq from "../src/images/faq.svg";
 import React, { Suspense, lazy, useEffect, useState } from "react";
 import data from "./data.js";
 // import Card from "./Card.js";
@@ -6,8 +8,9 @@ import Loading from "./components/Loading.js";
 import Landing from "./pages/Landing.js";
 import Services from "./components/Services.js";
 import Footer from "./components/Footer.js";
+import Reviews from "./components/Reviews.js";
+import Questions from "./components/Accordion/Questions.js";
 const Card = lazy(() => import("./components/Card.js"));
-
 
 
 export default function App() {
@@ -20,9 +23,9 @@ export default function App() {
             const response = await fetch('')
             const data = await response.json()
             setLoading(false)
-            console.log(data);
+            console.log(data)
         } catch (error) {
-             setLoading(false);
+             setLoading(false)
             console.error(error)
         }
     }
@@ -56,8 +59,19 @@ export default function App() {
         <div> {visits.length === 0 && <h3>No travels </h3>} </div>
         {visits.length === 0 && (
           <button onClick={() => setVisits(data)}>Refresh</button>
-            )}
-            <Footer />
+        )}
+        <h2 style={{ textAlign: "center" }}>Reviews</h2>
+        <div className="reviews-illustration-div">
+          <Reviews />
+          <img className="illustration-travell" src={travel} alt="" />
+        </div>
+        <h3 style={{ textAlign: "center" }}>Frequently asked question</h3>
+        <div className='question-illustration-div'>
+          <img className="illustration-travell" src={faq} alt="" /> 
+          <Questions />
+        </div>
+
+        <Footer />
       </div>
     );
 } 
