@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import Data from "./data";
-import { FaPlus, FaMinus } from "react-icons/fa";
+// import { FaPlus, FaMinus } from "react-icons/fa"; 
 
 const Questions = () => {
   const [questions, setQuestions] = useState(Data);

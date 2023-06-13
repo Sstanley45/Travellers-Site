@@ -51,15 +51,11 @@ export default function App() {
 
     return (
       <div>
-        <Navbar visits={visits} />
+        <Navbar visits={visits} /> 
         <Landing />
         <Services />
         <h1 style={{ textAlign: "center" }}>Popular Destinations</h1>
         <Suspense fallback={<Loading />}>{mydata}</Suspense>
-        <div> {visits.length === 0 && <h3>No travels </h3>} </div>
-        {visits.length === 0 && (
-          <button onClick={() => setVisits(data)}>Refresh</button>
-        )}
         <h2 style={{ textAlign: "center" }}>Reviews</h2>
         <div className="reviews-illustration-div">
           <div>

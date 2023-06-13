@@ -205,3 +205,207 @@ text-align: center;
   cursor: pointer;
   color: rgb(238, 82, 108);
 }
+/* -------------------------------------- */
+@media (max-width : 700px){
+  * {
+    box-sizing: border-box;
+    margin: 5px;
+}
+  .navBar{
+    height: 50px;
+    border: none;
+}
+.navBar-text {
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 20px;
+    font-weight: 500;
+    color:black;
+    border-left: 3px solid;
+    padding: 3px;
+    width: 160px;
+    margin-left: 0px;
+}
+.hero-image {
+ display: none;
+}
+.nav-list ul{
+  display: none;
+  text-align: center; 
+}
+.landing-page{
+    display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content h1{
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  
+}
+.hero-content h3{
+  font-size: 20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+  font-weight: 300;
+  font-style: italic; 
+  text-shadow: 1px 1px darkgray;
+}
+.services-div{
+  display: flex;
+  flex-direction: column;
+}
+.services-div div{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.signup-btn{
+  display: none;
+}
+.service-img{
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  border: none;
+  border-radius: 4px;
+}
+.reviews-illustration-div{
+  display: flex;
+  flex-direction: column;
+}
+.question-illustration-div{
+  display: flex;
+  flex-direction: column;
+}
+.illustration-travell{
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  border: none;
+  border-radius: 4px;
+}
+.card-img{
+  display: none;
+}
+.review-div{
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  padding: 70px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.question-div{
+  width: 100%;
+  height:auto ;
+  margin: 15px;
+  padding: 50px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 400px;
+}
+
+}
+
+/* --------------------------------------------- */
+@media (max-width : 992px){ 
+   * {
+    box-sizing: border-box;
+    margin: 3px;
+   }
+   
+  .navBar{
+    height: 80px;
+    border: none;
+}
+.navBar-text {
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 25px;
+    font-weight: 550px;
+    color:black;
+    border-left: 3px solid;
+    padding: 4px;
+    width: 195px;
+    margin-left: 0px;
+}
+.hero-image {
+  background-image: url("https://media.istockphoto.com/id/850201134/photo/african-bush-elephants-loxodonta-africana.webp?b=1&s=170667a&w=0&k=20&c=NBNQvOYAFKiAlenK1uPmoMI-uJYEFLZ7c16grm7cJLI=");
+  height: 500px;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  width: 500px; 
+  margin:10px;
+  border: none;
+  border-radius: 80px 0px 0px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.hero-content h1{
+  font-size: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 750px;
+}
+
+.hero-content h3{
+  font-size: 25px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+  font-weight: 300;
+  font-style: italic; 
+  text-shadow: 1px 1px darkgray;
+}
+.nav-list ul{
+  display: none;
+  text-align: center; 
+}
+.signup-btn{
+  display: none;
+}
+.services-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card-img{
+  display: none;
+}
+  .reviews-illustration-div{
+  display: flex;
+  flex-direction: column;
+}
+.question-illustration-div{
+  display: flex;
+  flex-direction: column;
+}
+.review-div{
+  width: 60%;
+  height: auto;
+  margin: 20px;
+  padding: 70px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.review-div{
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  padding: 70px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.illustration-travell{
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  border: none;
+  border-radius: 4px;
+}
+.question-div{
+  width: 100%;
+  height:auto ;
+  margin: 10px;
+  padding: 50px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 400px;
+}
+
+}
+@media (min-width : 993px){
+  .card-div{
+    display: flex;
+    flex-direction: row;
+  }
+}
