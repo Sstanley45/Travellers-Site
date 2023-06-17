@@ -5,8 +5,10 @@ const Landing = () => {
     <>
       <div className="landing-page">
         <div className="hero-content">
+          
           <h1>
-            Embrace the Magic of <span className="style-text">Exploration!</span>
+            Embrace the Magic of{" "}
+            <h1 className="style-text">Exploration!</h1>
           </h1>
           <h3>
             Escape, Discover, Inspire: Join us on a Transformative Adventure

@@ -12,7 +12,7 @@ export default function Card(props) {
   return (
     <div className=" mb-2">
       <div className="m-2 card-div">
-        <div>
+        <div>                                
           <img
             src={props.item.imageUrl}
             className="card-img"

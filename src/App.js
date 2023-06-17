@@ -50,8 +50,8 @@ export default function App() {
 
 
     return (
-      <div>
-        <Navbar visits={visits} /> 
+      <div className="container">
+        <Navbar visits={visits} />
         <Landing />
         <Services />
         <h1 style={{ textAlign: "center" }}>Popular Destinations</h1>
@@ -66,7 +66,7 @@ export default function App() {
           </div>
         </div>
         <h3 style={{ textAlign: "center" }}>
-          Frequently asked question - <span className='style-text'>FAQs</span>
+          Frequently asked question - <span className="style-text">FAQs</span>
         </h3>
         <div className="question-illustration-div">
           <div className="flex-item-1">

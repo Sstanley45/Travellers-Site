@@ -1,411 +1,186 @@
-* {
-    box-sizing: border-box;
-    margin: 10px;
-}
-p{
-  font-family:'Courier New', Courier, monospace ;
-  font-size:medium ;
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.nav-pic{
-    margin:auto;
-    padding: 30px;
-}
-#readM-btn{
-    background-color: white;
-    border: 0ch;
-    color: rgb(202, 78, 78);
-}
-.navBar{
-    height: 100px;
-    border: none;
-}
-.navBar-text {
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+@media (max-width: 1636px) {
+  .container {
+    max-width: 1280px;
+  }
+  /* nav-bar */
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 20vh;
+  }
+  .items {
+    flex-grow: 1;
+  }
+  .navBar-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 30px;
     font-weight: 600;
-    color:black;
+    color: black;
     border-left: 3px solid;
     padding: 5px;
     width: 250px;
-}
-.hero-image {
-  background-image: url("https://media.istockphoto.com/id/850201134/photo/african-bush-elephants-loxodonta-africana.webp?b=1&s=170667a&w=0&k=20&c=NBNQvOYAFKiAlenK1uPmoMI-uJYEFLZ7c16grm7cJLI=");
-  height: 500px;
-  background-size: cover; 
-  background-repeat: no-repeat;
-  width: 1500px; 
-  margin:10px;
-  border: none;
-  border-radius: 80px 0px 0px 80px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
+  }
+  p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+  }
+  .nav-list ul {
+    display: flex;
+    text-align: center;
+  }
 
-.hero-text {
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  color: white;
-}
-.landing-page{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero-content{
-text-align: center;
-}
-.hero-content h1{
-  font-size: 70px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 800;
-  
-}
-.hero-content h3{
-  font-size: 30px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  font-weight: 400;
-  font-style: italic; 
-  text-shadow: 1px 1px darkgray;
-}
-.navBar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .ul-list li {
+    text-decoration: none;
+    margin-left: 70px;
+    list-style-type: none;
+    font-family: "Courier New", Courier, monospace;
+    font-size: large;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    border-top: 2px solid;
+    border-color: transparent;
+    transition: all 0.3s;
+  }
+  .ul-list li:hover {
+    border-bottom: 1px solid rgb(231, 156, 156);
+    color: rgb(236, 117, 137);
+    transform: rotate(4deg);
+  }
+  .signup-btn {
+  background-color: transparent;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    font-family: "Courier New", Courier, monospace;
+    width: 145px;
+    border-radius: 20px;
+    border-color: rgb(236, 117, 137);
+    margin-bottom: 15px;
+    transition: all 0.5s;
+  }
+  .signup-btn:hover{
+    background-color:  rgb(241, 138, 155);
+    transform: rotate(5deg);
+  }
+  .bars-icon{
+    display: none;
+  }
+  /* landing page */
+  .landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-image {
+    background-image: url("https://media.istockphoto.com/id/850201134/photo/african-bush-elephants-loxodonta-africana.webp?b=1&s=170667a&w=0&k=20&c=NBNQvOYAFKiAlenK1uPmoMI-uJYEFLZ7c16grm7cJLI=");
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1500px;
+    margin: 10px;
+    border: none;
+    border-radius: 80px 0px 0px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .hero-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: white;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 70px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: 800;
+  }
+  .hero-content h3 {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-shadow: 1px 1px darkgray;
+  }
+  @keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  20% {
+    transform: translate(-150px);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  80%  {
+     transform: translate(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  }
+  .style-text {
+    color: rgb(221, 57, 85);
+    font-family: "Courier New", Courier, monospace;
+    font-variant: initial;
+    animation: slideInLeft 2s linear;
+  }
 
-.nav-list ul{
-  display: flex;
-  text-align: center; 
-}
 
-.ul-list li{
-  text-decoration:none;
-  margin-left: 70px;
-  list-style-type: none;
-  font-family:'Courier New', Courier, monospace ;
-  font-size: large;
-  cursor: pointer;
-  border-bottom: 1px solid transparent;
-}
-.ul-list li:hover{
-  border-bottom: 2px solid rgb(231, 156, 156);
-  color: rgb(236, 117, 137);
-}
-.signup-btn{
-  background-color:rgb(247, 166, 179);
-  color:black;
-  padding: 6px;
-  font-size: 18px;
-  width: 145px;
-  border-radius: 20px;
-}
-.signup-btn :hover{
-  background-color: rgb(235, 195, 195);
-}
-.style-text{
-  color: rgb(221, 57, 85);
-  font-family:'Courier New', Courier, monospace ;
-  font-variant: initial;
-}
-.services-div{
+  /* service divs */
+  .services-div{
   display: flex;
   justify-content:space-evenly;
-  align-items: center;
 }
 .services-div div{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  width: 600px;
+  max-width: 600px;
+  margin: 0 10px;
 }
 .service-img{
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   margin: auto;
   border-radius: 5px;
 }
-.service-img :hover{
-  width: 460px;
-  height: 340px;
 }
-.card-div{
-  display: flex;
-  flex-direction: row;
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
 }
-.card-img{
-  width: 500px;
-  height: 400px;
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
 }
-.review-div{
-  width: 600px;
-  height: auto;
-  margin: 20px;
-  padding: 70px 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
 }
-.review-div:hover{
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
 }
-.review-img{
-  border-radius: 50%;
-  display: block;
-  width: 170px;
-  margin: auto;
-  height: 170px;
-}
-.review-icons{
-  display: flex;
-  justify-content: space-evenly;
-  width: 150px;
-  margin: auto;
-}
-.angle{
-  width: 30px;
-  height: 30px;
-  color:rgb(247, 166, 179);
-  cursor: pointer;
-}
-.question-div{
-  width: 600px;
-  height:auto ;
-  margin: 20px;
-  padding: 70px 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.question-icon{
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin: 15px;
-}
-.question-info{
-  font-family:'Courier New', Courier, monospace ;
-  font-size: large;
-  color: rgb(221, 57, 85);
-}
-.illustration-travell{
-  width: 500px;
-  height: 500px;
-}
-.reviews-illustration-div{
-  display: flex;
-  justify-content: space-around;
-}
-.question-illustration-div{
-  display: flex;
-   justify-content: space-around;
-}
-.flex-item-1 {
-  flex-shrink: 0;
-}
-.plus-minus-icon{
-  font-size:larger ;
-  font-weight: 700;
-  cursor: pointer;
-  color: rgb(238, 82, 108);
-}
-/* -------------------------------------- */
-@media (max-width : 700px){
-  * {
-    box-sizing: border-box;
-    margin: 5px;
-}
-  .navBar{
-    height: 50px;
-    border: none;
-}
-.navBar-text {
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    font-size: 20px;
-    font-weight: 500;
-    color:black;
-    border-left: 3px solid;
-    padding: 3px;
-    width: 160px;
-    margin-left: 0px;
-}
-.hero-image {
- display: none;
-}
-.nav-list ul{
-  display: none;
-  text-align: center; 
-}
-.landing-page{
-    display: inline-block;
-  justify-content: center;
-  align-items: center;
-}
-.hero-content h1{
-  font-size: 50px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 700;
-  
-}
-.hero-content h3{
-  font-size: 20px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  font-weight: 300;
-  font-style: italic; 
-  text-shadow: 1px 1px darkgray;
-}
-.services-div{
-  display: flex;
-  flex-direction: column;
-}
-.services-div div{
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-.signup-btn{
-  display: none;
-}
-.service-img{
-  width: 100%;
-  height: 300px;
-  margin: auto;
-  border: none;
-  border-radius: 4px;
-}
-.reviews-illustration-div{
-  display: flex;
-  flex-direction: column;
-}
-.question-illustration-div{
-  display: flex;
-  flex-direction: column;
-}
-.illustration-travell{
-  width: 100%;
-  height: 200px;
-  margin: auto;
-  border: none;
-  border-radius: 4px;
-}
-.card-img{
-  display: none;
-}
-.review-div{
-  width: 100%;
-  height: auto;
-  margin: 20px;
-  padding: 70px 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.question-div{
-  width: 100%;
-  height:auto ;
-  margin: 15px;
-  padding: 50px 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  font-weight: 400px;
-}
-
-}
-
-/* --------------------------------------------- */
-@media (max-width : 992px){ 
-   * {
-    box-sizing: border-box;
-    margin: 3px;
-   }
-   
-  .navBar{
-    height: 80px;
-    border: none;
-}
-.navBar-text {
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    font-size: 25px;
-    font-weight: 550px;
-    color:black;
-    border-left: 3px solid;
-    padding: 4px;
-    width: 195px;
-    margin-left: 0px;
-}
-.hero-image {
-  background-image: url("https://media.istockphoto.com/id/850201134/photo/african-bush-elephants-loxodonta-africana.webp?b=1&s=170667a&w=0&k=20&c=NBNQvOYAFKiAlenK1uPmoMI-uJYEFLZ7c16grm7cJLI=");
-  height: 500px;
-  background-size: cover; 
-  background-repeat: no-repeat;
-  width: 500px; 
-  margin:10px;
-  border: none;
-  border-radius: 80px 0px 0px 80px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.hero-content h1{
-  font-size: 60px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 750px;
-}
-
-.hero-content h3{
-  font-size: 25px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-  font-weight: 300;
-  font-style: italic; 
-  text-shadow: 1px 1px darkgray;
-}
-.nav-list ul{
-  display: none;
-  text-align: center; 
-}
-.signup-btn{
-  display: none;
-}
-.services-div{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.card-img{
-  display: none;
-}
-  .reviews-illustration-div{
-  display: flex;
-  flex-direction: column;
-}
-.question-illustration-div{
-  display: flex;
-  flex-direction: column;
-}
-.review-div{
-  width: 60%;
-  height: auto;
-  margin: 20px;
-  padding: 70px 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.review-div{
-  width: 100%;
-  height: auto;
-  margin: 20px;
-  padding: 70px 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.illustration-travell{
-  width: 100%;
-  height: 200px;
-  margin: auto;
-  border: none;
-  border-radius: 4px;
-}
-.question-div{
-  width: 100%;
-  height:auto ;
-  margin: 10px;
-  padding: 50px 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  font-weight: 400px;
-}
-
-}
-@media (min-width : 993px){
-  .card-div{
-    display: flex;
-    flex-direction: row;
+@media (max-width: 475px) {
+  .container {
+    max-width: 100%;
   }
 }
