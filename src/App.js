@@ -54,23 +54,31 @@ export default function App() {
         <Navbar visits={visits} />
         <Landing />
         <Services />
-        <h1 style={{ textAlign: "center" }}>Popular Destinations</h1>
+        <h1 style={{ textAlign: "center", margin: "30px" }}>
+          Popular Destinations
+        </h1>
         <Suspense fallback={<Loading />}>{mydata}</Suspense>
-        <h2 style={{ textAlign: "center" }}>Reviews</h2>
+        <h2 style={{ textAlign: "center" }}>
+          Checkout Reviews From Our Clients!
+        </h2>
         <div className="reviews-illustration-div">
           <div>
             <Reviews />
           </div>
-          <div className="flex-item-1">
-            <img className="illustration-travell" src={travel} alt="" />
+          <div className="ilustration-person-with-bag">
+            <img className="illustration-travell person-with-bag-img" src={travel} alt="" />
           </div>
         </div>
         <h3 style={{ textAlign: "center" }}>
           Frequently asked question - <span className="style-text">FAQs</span>
         </h3>
         <div className="question-illustration-div">
-          <div className="flex-item-1">
-            <img className="illustration-travell" src={faq} alt="" />
+          <div>
+            <img
+              className="illustration-travell illustration-question"
+              src={faq}
+              alt=""
+            />
           </div>
           <div>
             <Questions />

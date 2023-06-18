@@ -13,13 +13,13 @@ const Questions = () => {
     return (
       <div key={question.id}>
         <div className="question-icon">
-          <h5>{question.title}</h5>
+          <h5 className="question-title">{question.title}</h5>
           <span className="plus-minus-icon" onClick={() => handleClick(question.id)}> 
             {shownInfoId === question.id ? "-" : "+"}
           </span>
         </div>
         <p className="question-info">
-          {shownInfoId === question.id && question.info}
+          {shownInfoId === question.id && question.info} 
         </p>
       </div>
     );

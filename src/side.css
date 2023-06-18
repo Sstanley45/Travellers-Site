@@ -141,7 +141,6 @@ text-align: center;
   margin: 20px;
   padding: 70px 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-
 }
 .review-div:hover{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -194,7 +193,7 @@ text-align: center;
 }
 .question-illustration-div{
   display: flex;
-   justify-content: space-around;
+  justify-content: space-around;
 }
 .flex-item-1 {
   flex-shrink: 0;

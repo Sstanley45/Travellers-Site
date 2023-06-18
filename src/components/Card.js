@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import StarRating from "./StarRating";
 
 export default function Card(props) {
-  const [like, setLike] = React.useState(0);
+ 
   const [readMore, setReadMore] = useState(false);
 
   function handleReadMore() {
@@ -10,8 +10,8 @@ export default function Card(props) {
   }
 
   return (
-    <div className=" mb-2">
-      <div className="m-2 card-div">
+    
+      <div className="card-div">
         <div>                                
           <img
             src={props.item.imageUrl}
@@ -20,8 +20,8 @@ export default function Card(props) {
           />
         </div>
         <div>
-          <div className="card-body">
-            <p className="card-text">
+          <div className="">
+            <p className="card-text-location">
               <small className="text-muted">{props.item.location}</small>
             </p>
             <h5 className="card-title">{props.item.title}</h5>
@@ -43,6 +43,6 @@ export default function Card(props) {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 }

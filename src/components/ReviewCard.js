@@ -39,7 +39,7 @@ const ReviewCard = (data) => {
           <h5 style={{ textAlign: "center" }} className="style-text">
             {viewData.job}
           </h5>
-          <p>{viewData.text}</p>
+          <p style={{padding : '5px'}}>{viewData.text}</p> 
         </div>
         <div className="review-icons">
           <div>
