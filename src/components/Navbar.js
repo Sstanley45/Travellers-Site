@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import SideBar from "./SideBar";
+
+
 export default function Navbar() {
   const [showLinks, setShowLinks] = useState(false)
+  const handleCloseIcon = () => {
+    setShowLinks(false)
+  }
   return (
     <>
       <div className="navBar">
         <div className="items">
-          <h1 className="navBar-text">Palm Travellers</h1> 
+          <h1 className="navBar-text">Palm Travellers</h1>
         </div>
-        <div className="nav-list items"> 
+        <div className="nav-list items">
           <ul className="ul-list">
             <li>Home</li>
             <li>About</li>
@@ -16,7 +22,7 @@ export default function Navbar() {
             <li>community</li>
           </ul>
         </div>
-        <div className="items"> 
+        <div className="items">
           <FaBars
             className="bars-icon"
             onClick={() => setShowLinks(!showLinks)}
@@ -26,6 +32,9 @@ export default function Navbar() {
           <button className="signup-btn">Contact us</button>
         </div>
       </div>
+      <section>
+        <SideBar showLinks={showLinks} handleCloseIcon={handleCloseIcon} />
+      </section>
     </>
   );
 }

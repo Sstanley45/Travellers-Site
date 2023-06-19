@@ -53,7 +53,7 @@ export default function App() {
     return (
       <div className="container">
         <Navbar visits={visits} />
-        <SideBar />
+       
         <Landing />
         <Services />
         <h1 style={{ textAlign: "center", margin: "30px" }}>

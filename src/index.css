@@ -21,11 +21,17 @@
     background-color: white;
     padding: 1rem;
     margin-bottom: 1rem;
-     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
- .sidebar{
-  display: none;
- }
+  .sidebar {
+    display: none;
+  }
+   .hide-side-bar-component {
+    height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.7s;
+  }
   .navBar-text {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -121,7 +127,7 @@
     font-weight: 400;
     font-style: italic;
     text-shadow: 1px 1px darkgray;
-     line-height: 2.5rem;
+    line-height: 2.5rem;
   }
   @keyframes slideInLeft {
     0% {
@@ -167,7 +173,7 @@
   }
   .card-div {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: 5rem;
     padding: 1rem;
   }
@@ -309,11 +315,11 @@
     padding: 1rem;
     height: auto;
   }
-   .illustration-travell {
+  .illustration-travell {
     max-width: 450px;
     min-height: 450px;
   }
-    .ul-list li {
+  .ul-list li {
     text-decoration: none;
     margin-left: 50px;
     list-style-type: none;
@@ -325,9 +331,7 @@
     border-color: transparent;
     transition: all 0.3s;
   }
-
 }
-
 
 /* --------------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
@@ -340,65 +344,89 @@
   .signup-btn {
     display: none;
   }
-   .sidebar{
+  .sidebar {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     padding: 10px;
     text-align: center;
-     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-     max-width: 600px;
-     margin: auto;
-   }
-
- .div-list-sidebar{
-/* hereeeeeee */
-text-align: center;
-width: 100%;
- }
- .div-list-sidebar ul{
-  width: 100%;
-  margin: auto;
- }
-
-.ul-list-sidebar li{
- list-style-type: none;
- margin: 15px;
- padding: 5px;
- transition: all 0.4s;
- cursor: pointer;
- border-radius: 10px;
-}
-.ul-list-sidebar li:hover{
-  background-color: rgb(250, 205, 212);
-  transform: translateX(8px);
-}
-.signup-btn-sidebar{
-   background-color: transparent;
-    color: black;
-    padding: 5px;
-    font-size: 16px;
-    font-family: "Courier New", Courier, monospace;
-    width: 145px;
-    border-radius: 20px;
-    border-color: rgb(236, 117, 137);
-    margin-bottom: 15px;
-    transition: all 0.5s;
-    cursor: pointer;
-    text-align: center;
-}
-.signup-btn-sidebar:hover { 
-    background-color: rgb(241, 138, 155);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+  }
+  .show-side-bar-component {
+    height: 400px;
+    transition: all 0.7s;
+    overflow: hidden;
+  }
+  .hide-side-bar-component {
+    height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.7s;
   }
 
-   .card-div {
+  .div-list-sidebar {
+  
+    text-align: center;
+    width: 100%;
+  }
+  .div-list-sidebar ul {
+    width: 100%;
+    margin: auto;
+  }
+
+  .ul-list-sidebar li {
+    list-style-type: none;
+    margin: 2px;
+    padding: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+  .ul-list-sidebar li:hover {
+    background-color: rgb(250, 205, 212);
+    transform: translateX(8px);
+  }
+  .signup-btn-sidebar {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+    width: 200px;
+    border-radius: 20px;
+    border-color: rgb(236, 117, 137);
+    background-color: rgb(241, 138, 155);
+    margin: 15px;
+    transition: all 1s;
+    cursor: pointer;
+    text-align: center;
+  }
+  .signup-btn-sidebar:hover {
+    background-color: rgb(240, 42, 75);
+  }
+  .close-icon {
+    position: relative;
+    right: -250px;
+    font-size: large;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .close-icon:hover {
+    transform: rotate(90deg);
+    color: rgb(240, 42, 75);
+  }
+
+  .card-div {
     display: flex;
     flex-direction: column;
     padding: 0rem;
   }
-   .card-img { 
+  .card-img {
     width: 700px;
-    height: 400px;   
+    height: 400px;
     border-radius: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
@@ -407,28 +435,27 @@ width: 100%;
     max-width: 100px;
     text-align: center;
     border-color: rgb(236, 117, 137);
-    margin: auto; 
+    margin: auto;
     margin-top: 0;
   }
- .reviews-illustration-div {
+  .reviews-illustration-div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 5rem;
   }
-   .review-div {
+  .review-div {
     max-width: 600px;
     height: auto;
-    margin-bottom:0px;
+    margin-bottom: 0px;
     padding: 70px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     margin: auto;
   }
-    .question-illustration-div {
+  .question-illustration-div {
     display: flex;
     flex-direction: column-reverse;
-    
   }
   .question-div {
     max-width: 600px;
@@ -437,33 +464,33 @@ width: 100%;
     padding: 20px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-  .illustration-question{
+  .illustration-question {
     display: none;
   }
-  .ilustration-person-with-bag{
+  .ilustration-person-with-bag {
     width: 400px;
     height: 400px;
-    margin:auto; 
+    margin: auto;
   }
-  .person-with-bag-img{
+  .person-with-bag-img {
     width: 300px;
     height: 300px;
     margin: auto;
   }
-.bars-icon{
-  width: 40px;
-  height: 30px;
-  display: inline;
-  position: relative;
-  right: -150px;
-  cursor: pointer;
-  transition: all 1s;
-}
-.bars-icon:hover{
-  color: rgb(196, 51, 75);
-  transform: rotate(90deg);
-}
- .hero-content h1 {
+  .bars-icon {
+    width: 40px;
+    height: 30px;
+    display: inline;
+    position: relative;
+    right: -150px;
+    cursor: pointer;
+    transition: all 1s;
+  }
+  .bars-icon:hover {
+    color: rgb(196, 51, 75);
+    transform: rotate(90deg);
+  }
+  .hero-content h1 {
     font-size: 50px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -475,25 +502,22 @@ width: 100%;
     font-weight: 350px;
     font-style: italic;
     text-shadow: 1px 1px darkgray;
-     line-height: 2.3rem;
+    line-height: 2.3rem;
   }
   .landing-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem; 
+    gap: 1rem;
   }
-
-
 }
 /* -------------------------------------------------------------------------------------------- */
-
 
 @media (max-width: 768px) {
   .container {
     max-width: 640px;
   }
-   .hero-content h1 {
+  .hero-content h1 {
     font-size: 45px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -505,23 +529,30 @@ width: 100%;
     font-weight: 350px;
     font-style: italic;
     text-shadow: 1px 1px darkgray;
-     line-height: 2.3rem;
+    line-height: 2.3rem;
   }
   .landing-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.2rem; 
+    gap: 1.2rem;
   }
-  .bars-icon{
-  width: 39px;
-  height: 29px;
-  display: inline;
-  position: relative;
-  right: -110px;
-  cursor: pointer;
-  transition: all 1s;
-}
+  .bars-icon {
+    width: 39px;
+    height: 29px;
+    display: inline;
+    position: relative;
+    right: -110px;
+    cursor: pointer;
+    transition: all 1s;
+  }
+    .close-icon {
+    position: relative;
+    right: -230px;
+    font-size: large;
+    cursor: pointer;
+    transition: 1s;
+  }
 
   .services-div {
     display: flex;
@@ -539,20 +570,42 @@ width: 100%;
     margin: auto;
     border-radius: 5px;
   }
-    .card-img { 
+  .card-img {
     width: 600px;
-    height: 400px;   
+    height: 400px;
     border-radius: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-   .reviews-illustration-div {
+  .reviews-illustration-div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 0rem;
   }
-
-
+    .ul-list-sidebar li {
+    list-style-type: none;
+    margin: 2px;
+    padding: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 23px;
+  }
+    .signup-btn-sidebar {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Courier New", Courier, monospace;
+    width: 180px;
+    border-radius: 20px;
+    border-color: rgb(236, 117, 137);
+    background-color: rgb(241, 138, 155);
+    margin: 15px;
+    transition: all 1s;
+    cursor: pointer;
+    text-align: center;
+  }
 }
 
 /* --------------------------------------------- */
@@ -561,22 +614,29 @@ width: 100%;
   .container {
     max-width: 475px;
   }
-     .card-img { 
+  .card-img {
     width: 400px;
-    height: 300px;   
+    height: 300px;
     border-radius: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-    .bars-icon{
-  width: 39px;
-  height: 29px;
-  display: inline;
-  position: relative;
-  right: -60px;
-  cursor: pointer;
-  transition: all 1s;
-}
- .hero-content h1 {
+  .bars-icon {
+    width: 39px;
+    height: 29px;
+    display: inline;
+    position: relative;
+    right: -60px;
+    cursor: pointer;
+    transition: all 1s;
+  }
+    .close-icon {
+    position: relative;
+    right: -200px;
+    font-size: large;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .hero-content h1 {
     font-size: 33px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -588,41 +648,42 @@ width: 100%;
     font-weight: 345px;
     font-style: italic;
     text-shadow: 1px 1px darkgray;
-    line-height: 2.2rem; 
+    line-height: 2.2rem;
   }
   .landing-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.2rem; 
+    gap: 1.2rem;
   }
-    .sidebar{
+  .sidebar {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     padding: 10px;
     text-align: center;
-     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-     max-width: 500px;
-     margin: auto;
-   }
-   .question-div {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .question-div {
     max-width: 500px;
     height: auto;
     margin: auto;
     padding: 20px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-    .review-div {
+  .review-div {
     max-width: 500px;
     height: auto;
-    margin-bottom:0px;
+    margin-bottom: 0px;
     padding: 70px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     margin: auto;
   }
-    .navBar-text {
+  .navBar-text {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
@@ -633,23 +694,44 @@ width: 100%;
     padding: 4px;
     width: 240px;
   }
-    .reviews-illustration-div {
+  .reviews-illustration-div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 0rem;
   }
-
- 
+     .ul-list-sidebar li {
+    list-style-type: none;
+    margin: 2px;
+    padding: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+      .signup-btn-sidebar {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    font-size: 17px;
+    font-family: "Courier New", Courier, monospace;
+    width: 170px;
+    border-radius: 20px;
+    border-color: rgb(236, 117, 137);
+    background-color: rgb(241, 138, 155);
+    margin: 15px;
+    transition: all 1s;
+    cursor: pointer;
+    text-align: center;
+  }
 }
-
 
 /* ------------------------------ */
 @media (max-width: 475px) {
   .container {
     max-width: 100%;
   }
-   .hero-content h1 {
+  .hero-content h1 {
     font-size: 25px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -667,45 +749,45 @@ width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem; 
+    gap: 1rem;
   }
-   .question-div {
+  .question-div {
     max-width: 350px;
     height: auto;
     margin: auto;
     padding: 20px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-    .sidebar{
+  .sidebar {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     padding: 10px;
     text-align: center;
-     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-     max-width: 300px;
-     margin: auto;
-   }
-    .review-div {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: auto;
+  }
+  .review-div {
     max-width: 350px;
     height: auto;
-    margin-bottom:0px;
+    margin-bottom: 0px;
     padding: 70px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     margin: auto;
   }
-  .ilustration-person-with-bag{
+  .ilustration-person-with-bag {
     width: 350px;
     height: 350px;
-    margin:auto; 
+    margin: auto;
   }
-  .person-with-bag-img{
+  .person-with-bag-img {
     width: 300px;
     height: 300px;
     margin: auto;
   }
-  .card-div{
+  .card-div {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -715,12 +797,11 @@ width: 100%;
     border-radius: 5px;
     padding: 10px;
   }
-  .card-img{
+  .card-img {
     border-radius: 2px;
     margin-bottom: 0px;
     width: 100%;
   }
- 
 
   .navBar-text {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -733,25 +814,32 @@ width: 100%;
     padding: 4px;
     width: 240px;
   }
-    .bars-icon{
-  width: 30px;
-  height: 23px;
-  display: inline;
-  position: relative;
-  right: -20px;
-  cursor: pointer;
-  transition: all 1s;
-}
- .card-text-location {
+  .bars-icon {
+    width: 30px;
+    height: 23px;
+    display: inline;
+    position: relative;
+    right: -20px;
+    cursor: pointer;
+    transition: all 1s;
+  }
+    .close-icon {
+    position: relative;
+    right: -120px;
+    font-size: large;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .card-text-location {
     border: 2px solid;
     max-width: 100px;
     text-align: center;
     border-color: rgb(236, 117, 137);
-    margin: auto; 
+    margin: auto;
     margin-bottom: 10px;
     color: white;
   }
-   #readM-btn {
+  #readM-btn {
     background-color: white;
     border: 0ch;
     color: rgb(202, 78, 78);
@@ -765,6 +853,28 @@ width: 100%;
     justify-content: space-around;
     gap: 0rem;
   }
- 
-
+     .ul-list-sidebar li {
+    list-style-type: none;
+    margin: 2px;
+    padding: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+      .signup-btn-sidebar {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    width: 170px;
+    border-radius: 20px;
+    border-color: rgb(236, 117, 137);
+    background-color: rgb(241, 138, 155);
+    margin: 15px;
+    transition: all 1s;
+    cursor: pointer;
+    text-align: center;
+  }
 }
