@@ -23,9 +23,9 @@
     margin-bottom: 1rem;
      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-  .items {
-    flex-grow: 1;
-  }
+ .sidebar{
+  display: none;
+ }
   .navBar-text {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -340,6 +340,57 @@
   .signup-btn {
     display: none;
   }
+   .sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px;
+    text-align: center;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     max-width: 600px;
+     margin: auto;
+   }
+
+ .div-list-sidebar{
+/* hereeeeeee */
+text-align: center;
+width: 100%;
+ }
+ .div-list-sidebar ul{
+  width: 100%;
+  margin: auto;
+ }
+
+.ul-list-sidebar li{
+ list-style-type: none;
+ margin: 15px;
+ padding: 5px;
+ transition: all 0.4s;
+ cursor: pointer;
+ border-radius: 10px;
+}
+.ul-list-sidebar li:hover{
+  background-color: rgb(250, 205, 212);
+  transform: translateX(8px);
+}
+.signup-btn-sidebar{
+   background-color: transparent;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    font-family: "Courier New", Courier, monospace;
+    width: 145px;
+    border-radius: 20px;
+    border-color: rgb(236, 117, 137);
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+.signup-btn-sidebar:hover { 
+    background-color: rgb(241, 138, 155);
+  }
+
    .card-div {
     display: flex;
     flex-direction: column;
@@ -467,7 +518,7 @@
   height: 29px;
   display: inline;
   position: relative;
-  right: -148px;
+  right: -110px;
   cursor: pointer;
   transition: all 1s;
 }
@@ -494,7 +545,12 @@
     border-radius: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-
+   .reviews-illustration-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0rem;
+  }
 
 
 }
@@ -516,23 +572,23 @@
   height: 29px;
   display: inline;
   position: relative;
-  right: -80px;
+  right: -60px;
   cursor: pointer;
   transition: all 1s;
 }
  .hero-content h1 {
-    font-size: 40px;
+    font-size: 33px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
     font-weight: 740px;
   }
   .hero-content h3 {
-    font-size: 20px;
+    font-size: 19px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-weight: 345px;
     font-style: italic;
     text-shadow: 1px 1px darkgray;
-    line-height: 2rem;
+    line-height: 2.2rem; 
   }
   .landing-page {
     display: flex;
@@ -540,6 +596,16 @@
     align-items: center;
     gap: 1.2rem; 
   }
+    .sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px;
+    text-align: center;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     max-width: 500px;
+     margin: auto;
+   }
    .question-div {
     max-width: 500px;
     height: auto;
@@ -567,6 +633,12 @@
     padding: 4px;
     width: 240px;
   }
+    .reviews-illustration-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0rem;
+  }
 
  
 }
@@ -578,18 +650,18 @@
     max-width: 100%;
   }
    .hero-content h1 {
-    font-size: 31px;
+    font-size: 25px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
     font-weight: 700px;
   }
   .hero-content h3 {
-    font-size: 18px;
+    font-size: 15px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-weight: 345px;
     font-style: italic;
     text-shadow: 1px 1px darkgray;
-    line-height: 2.5rem;
+    line-height: 2rem;
   }
   .landing-page {
     display: flex;
@@ -604,6 +676,16 @@
     padding: 20px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
+    .sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px;
+    text-align: center;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     max-width: 300px;
+     margin: auto;
+   }
     .review-div {
     max-width: 350px;
     height: auto;
@@ -623,12 +705,23 @@
     height: 300px;
     margin: auto;
   }
-   .card-img { 
-    width: 350px;
-    height: 300px;   
-    border-radius: 50px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  .card-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 10px;
+    background-color: rgb(8, 51, 51);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
   }
+  .card-img{
+    border-radius: 2px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+ 
+
   .navBar-text {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -645,9 +738,33 @@
   height: 23px;
   display: inline;
   position: relative;
-  right: -50px;
+  right: -20px;
   cursor: pointer;
   transition: all 1s;
 }
+ .card-text-location {
+    border: 2px solid;
+    max-width: 100px;
+    text-align: center;
+    border-color: rgb(236, 117, 137);
+    margin: auto; 
+    margin-bottom: 10px;
+    color: white;
+  }
+   #readM-btn {
+    background-color: white;
+    border: 0ch;
+    color: rgb(202, 78, 78);
+    cursor: pointer;
+    font-size: 1.1rem;
+    background-color: transparent;
+  }
+  .reviews-illustration-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0rem;
+  }
+ 
 
 }

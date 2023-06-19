@@ -15,7 +15,7 @@ export default function Card(props) {
         <div>                                
           <img
             src={props.item.imageUrl}
-            className="card-img"
+            className="card-img card-img-small-screen"
             alt="loading photo..."
           />
         </div>

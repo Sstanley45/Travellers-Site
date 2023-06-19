@@ -10,6 +10,7 @@ import Services from "./components/Services.js";
 import Footer from "./components/Footer.js";
 import Reviews from "./components/Reviews.js";
 import Questions from "./components/Accordion/Questions.js";
+import SideBar from './components/SideBar';
 const Card = lazy(() => import("./components/Card.js"));
 
 
@@ -52,6 +53,7 @@ export default function App() {
     return (
       <div className="container">
         <Navbar visits={visits} />
+        <SideBar />
         <Landing />
         <Services />
         <h1 style={{ textAlign: "center", margin: "30px" }}>
@@ -69,7 +71,7 @@ export default function App() {
             <img className="illustration-travell person-with-bag-img" src={travel} alt="" />
           </div>
         </div>
-        <h3 style={{ textAlign: "center" }}>
+        <h3 style={{ textAlign: "center",margin:"15px" }}>
           Frequently asked question - <span className="style-text">FAQs</span>
         </h3>
         <div className="question-illustration-div">
