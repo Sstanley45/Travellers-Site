@@ -11,6 +11,7 @@ import Footer from "./components/Footer.js";
 import Reviews from "./components/Reviews.js";
 import Questions from "./components/Accordion/Questions.js";
 import SideBar from './components/SideBar';
+import Submenu from './components/Submenu';
 const Card = lazy(() => import("./components/Card.js"));
 
 
@@ -53,7 +54,7 @@ export default function App() {
     return (
       <div className="container">
         <Navbar visits={visits} />
-       
+        <Submenu />
         <Landing />
         <Services />
         <h1 style={{ textAlign: "center", margin: "30px" }}>

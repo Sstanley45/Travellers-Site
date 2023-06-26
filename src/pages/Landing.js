@@ -1,6 +1,9 @@
 import React from "react";
+import { useGlobalContext } from "../context";
 
 const Landing = () => {
+  const data = useGlobalContext()
+  console.log(data); 
   return (
     <>
       <div className="landing-page">

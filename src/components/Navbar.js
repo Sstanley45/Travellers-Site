@@ -6,7 +6,7 @@ import SideBar from "./SideBar";
 export default function Navbar() {
   const [showLinks, setShowLinks] = useState(false)
   const handleCloseIcon = () => {
-    setShowLinks(false)
+    setShowLinks(false) 
   }
   return (
     <>
