@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Travel Agency Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Travel Agency website!
 
-## Available Scripts
+This website is designed to provide an exceptional user experience for travelers. It features various sections, including a customer reviews section, a rating system, and an accordion for frequently asked questions (FAQs). Additionally, the website is fully responsive, ensuring compatibility with a variety of screen sizes and devices.
 
-In the project directory, you can run:
+# How It's Made
 
-### `npm start`
+The Travel Agency website is being developed with a focus on the frontend using HTML, CSS, and ReactJS. The frontend development is complete and aims to provide an immersive and user-friendly experience for travelers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The website is built using HTML for structuring the content and CSS for styling and visual enhancements. ReactJS, a popular JavaScript library for building user interfaces, is utilized to create interactive and dynamic components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+It's important to note that the backend development for the website is still ongoing. As the developer, I am currently studying Node.js and Express to gain the necessary skills for building the backend of the Travel Agency website. The backend development will involve handling server-side functionalities, such as user authentication, database management, and API integration.
 
-### `npm test`
+# Tech Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following technologies were used in the development of the frontend: HTML: The markup language used for structuring the content and layout of the website. CSS: Used for styling and visually enhancing the website's design. ReactJS: A JavaScript library for building user interfaces.
 
-### `npm run build`
+The following technologies will be used in the ongoing backend development: Node.js: A JavaScript runtime environment for executing server-side JavaScript code. Express: A web application framework for Node.js, used for server-side functionalities. Database: A database management system to store and retrieve data, such as customer information or travel details. APIs: Integration with external APIs to fetch real-time data, such as flight information or hotel availability.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# What I Learnt and currently leaerning..
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+During the development of the frontend for the Travel Agency website, I have gained valuable experience in using HTML, CSS, and ReactJS to create engaging user interfaces and design appealing web pages. I have learned how to build interactive components, manage state, and handle user interactions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Additionally, I am currently studying Node.js and Express for the ongoing backend development. Through this learning process, I aim to gain expertise in server-side development, database management, and API integration. This ongoing study will enable me to create robust server-side functionalities for the Travel Agency website.
