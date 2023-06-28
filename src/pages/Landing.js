@@ -1,12 +1,11 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 
-const Landing = () => {
-  const data = useGlobalContext()
-  console.log(data); 
+const Landing = () => { 
+  const {closeSubmenu}  = useGlobalContext() 
   return (
     <>
-      <div className="landing-page">
+      <div className="landing-page" onMouseOver={closeSubmenu}>
         <div className="hero-content">
           
           <h1>

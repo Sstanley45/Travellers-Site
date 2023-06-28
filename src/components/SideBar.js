@@ -9,7 +9,7 @@ const SideBar = ({ showLinks, handleCloseIcon }) => {
           ? "sidebar show-side-bar-component"
           : "hide-side-bar-component"
       }
-    >
+    > 
       <div className="div-list-sidebar">
         <FaTimes onClick={handleCloseIcon} className="close-icon" />
 
